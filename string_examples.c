@@ -48,6 +48,7 @@ void string_example_2() {
     printf("%s\n", text);
 
 
+
 //    strchr();
 //    strcoll();
 //    strcspn();
