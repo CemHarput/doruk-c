@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include "pointer_examples.h"
 #include "string_examples.h"
+#include "dynamic_array_c.h"
+#include "cemil.h"
 
 #include <string.h>
 #include <math.h>
 #include <stdlib.h>
+#include <math.h>
 
 void data_types();
 
@@ -18,7 +21,14 @@ void double_array_multiple_dimension();
 
 void print_array(int row, int col, int *const *arr);
 
+void for_loop_c();
+
 #define SIZE 10
+
+int max(int a, int b) {
+    return a > b ? a : b;
+}
+
 
 int main() {
 
@@ -29,9 +39,49 @@ int main() {
 //    digit_frequencies();
 
 //    double_array_single_dimension();
-    double_array_multiple_dimension();
+//    double_array_multiple_dimension();
+//    for_loop_c();
+//    dynamic_in_c();
+
+    // static
+
+    int *dizi = cemil();
+
+    for (int i = 0; i < 8; ++i) {
+        printf("%d \t", dizi[i]);
+    }
 
     return 0;
+}
+
+void for_loop_c() {
+    int a, b;
+    char *arr[10];
+    arr[0] = "zero";
+    arr[1] = "one";
+    arr[2] = "two";
+    arr[3] = "three";
+    arr[4] = "four";
+    arr[5] = "five";
+    arr[6] = "six";
+    arr[7] = "seven";
+    arr[8] = "eight";
+    arr[9] = "nine";
+
+    scanf("%d", &a);
+    scanf("%d", &b);
+    // Complete the code.
+
+    for (int i = a; i < 10 && i <= b; i++) {
+        printf("%s\n", arr[i]);
+    }
+
+    for (int i = max(a, 10); b > 9 && i <= b; i++) {
+        if (i % 2 == 0)
+            printf("even\n");
+        else
+            printf("odd\n");
+    }
 }
 
 void double_array_multiple_dimension() {
