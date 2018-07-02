@@ -2,7 +2,7 @@
 #include "pointer_examples.h"
 #include "string_examples.h"
 #include "dynamic_array_c.h"
-#include "cemil.h"
+#include "strings-manip.h"
 
 #include <string.h>
 #include <math.h>
@@ -45,11 +45,7 @@ int main() {
 
     // static
 
-    int *dizi = cemil();
-
-    for (int i = 0; i < 8; ++i) {
-        printf("%d \t", dizi[i]);
-    }
+    test();
 
     return 0;
 }
