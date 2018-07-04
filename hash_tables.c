@@ -19,24 +19,24 @@ char *readline();
 char **split_string(char *);
 
 // Complete the checkMagazine function below.
-bool checkMagazine(int magazine_count, char **magazine, int note_count, char **note) {
+//bool checkMagazine(int magazine_count, char **magazine, int note_count, char **note) {
+//
+//    hash_t table;
+//    for (int i = 0; i < magazine_count; ++i) {
+//        insert(table, magazine[i]);
+//    }
+//    for (int j = 0; j < note_count; ++j) {
+//        int found = search(table, note[j]);
+//        if (found > -1) {
+//            delete(table, found);
+//        } else {
+//            return false;
+//        }
+//    }
+//    return true;
+//}
 
-    hash_t table = NULL;
-    for (int i = 0; i < magazine_count; ++i) {
-        insert(table, magazine[i]);
-    }
-    for (int j = 0; j < note_count; ++j) {
-        int found = search(table, note[j]);
-        if (found > -1) {
-            delete(table, found);
-        } else {
-            return false;
-        }
-    }
-    return true;
-}
-
-int main() {
+int main2() {
     char **mn = split_string(readline());
 
     char *m_endptr;
@@ -75,7 +75,7 @@ int main() {
 
     int note_count = n;
 
-    checkMagazine(magazine_count, magazine, note_count, note);
+//    checkMagazine(magazine_count, magazine, note_count, note);
 
     return 0;
 }

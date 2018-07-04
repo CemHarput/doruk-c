@@ -16,10 +16,10 @@ typedef struct {
 } hash_t;
 
 
-void insert(hash_t table, char *word);
+void insert(hash_t *table, char *word);
 
-int search(hash_t param, char *string);
+int search(hash_t *table, char *string);
 
-void delete(hash_t param, int i);
+void delete(hash_t *table, int i);
 
 #endif //DORUK_HASH_TABLES_H

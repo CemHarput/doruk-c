@@ -3,6 +3,7 @@
 #include "string_examples.h"
 #include "dynamic_array_c.h"
 #include "strings-manip.h"
+#include "stacks.h"
 
 #include <string.h>
 #include <math.h>
@@ -45,7 +46,15 @@ int main() {
 
     // static
 
-    test();
+//    test();
+
+    // stacks test
+    stack stack1;
+    init(&stack1);
+    push(&stack1, 'a');
+    push(&stack1, 'b');
+    push(&stack1, 'c');
+    push(&stack1, 'd');
 
     return 0;
 }

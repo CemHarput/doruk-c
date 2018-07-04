@@ -15,11 +15,9 @@ void replace(char *str,
     for (i = 0; i < strlen(str); i++)
         if (str[i] == c1)
             str[i] = c2;
-
-    "Ali", "kasdausdhu Ali", "asdyuasdhyuashd Ali asdnjiasduas"
 }
 
-void test(){
+void test() {
     char sent[20], ch1, ch2;
 // Get the sentence and the characters
     printf("Enter a sentence: ");
