@@ -9,6 +9,7 @@
 #include <math.h>
 #include <stdlib.h>
 #include <math.h>
+#include "balanced_brackets.h"
 
 void data_types();
 
@@ -26,9 +27,9 @@ void for_loop_c();
 
 #define SIZE 10
 
-int max(int a, int b) {
-    return a > b ? a : b;
-}
+//int max(int a, int b) {
+//    return a > b ? a : b;
+//}
 
 
 int main() {
@@ -49,12 +50,14 @@ int main() {
 //    test();
 
     // stacks test
-    stack stack1;
-    init(&stack1);
-    push(&stack1, 'a');
-    push(&stack1, 'b');
-    push(&stack1, 'c');
-    push(&stack1, 'd');
+//    stack stack1;
+//    init(&stack1);
+//    push(&stack1, 'a');
+//    push(&stack1, 'b');
+//    push(&stack1, 'c');
+//    push(&stack1, 'd');
+
+    test_brackets();
 
     return 0;
 }
@@ -81,12 +84,12 @@ void for_loop_c() {
         printf("%s\n", arr[i]);
     }
 
-    for (int i = max(a, 10); b > 9 && i <= b; i++) {
-        if (i % 2 == 0)
-            printf("even\n");
-        else
-            printf("odd\n");
-    }
+//    for (int i = max(a, 10); b > 9 && i <= b; i++) {
+//        if (i % 2 == 0)
+//            printf("even\n");
+//        else
+//            printf("odd\n");
+//    }
 }
 
 void double_array_multiple_dimension() {

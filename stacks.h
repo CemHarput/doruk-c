@@ -22,7 +22,7 @@ stack_type pop(stack *s);
 
 stack_type peek(stack *s);
 
-int max(stack *s);
+//int max(stack *s);
 
 
 #endif //DORUK_STACKS_H

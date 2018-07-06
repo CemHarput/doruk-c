@@ -17,7 +17,7 @@ void replace(char *str,
             str[i] = c2;
 }
 
-void test() {
+void test3() {
     char sent[20], ch1, ch2;
 // Get the sentence and the characters
     printf("Enter a sentence: ");
