@@ -10,6 +10,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include "balanced_brackets.h"
+#include "queues.h"
 
 void data_types();
 
@@ -57,7 +58,19 @@ int main() {
 //    push(&stack1, 'c');
 //    push(&stack1, 'd');
 
-    test_brackets();
+//    test_brackets();
+    queue q;
+    int temp;
+    queue_init(&q);
+    for (int i = 0; i < 5; ++i) {
+        scanf("%d", &temp);
+        enqueu(&q, temp);
+    }
+    for (int i = 0; i < 2; ++i) {
+        dequeue(&q);
+    }
+    print_queue(&q);
+
 
     return 0;
 }
