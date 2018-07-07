@@ -3,7 +3,6 @@
 //
 #include <string.h>
 #include <stdio.h>
-#include <values.h>
 
 void string_example_comparison() {
     int comparison;
@@ -46,13 +45,6 @@ void string_example_2() {
 
     strcpy(text, text2);
     printf("%s\n", text);
-
-
-
-//    strchr();
-//    strcoll();
-//    strcspn();
-//    strlen();
 
 
 }
