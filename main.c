@@ -12,6 +12,7 @@
 #include "hackerrank/balanced_brackets.h"
 #include "data-structures/queues.h"
 #include "buble-sort.h"
+#include "searching.h"
 
 int main() {
     int arr[] = {10, 9, 8, 7, 6};
@@ -27,6 +28,8 @@ int main() {
         printf("%s\n", arr2[i]);
     }
 
+    int i = binary_search(arr, 5, 8);
+    printf("%d", i);
 
     return 0;
 }
