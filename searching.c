@@ -36,6 +36,6 @@ int binary_search_internal(int arr[], int start, int end, int searching) {
     if (arr[middle] > searching)
         return binary_search_internal(arr, start, middle, searching);
     else {
-        return binary_search_internal(arr, middle + 1, end, searching);
+        return binary_search_internal(arr, middle + 1,end, searching);
     }
 }
