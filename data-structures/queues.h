@@ -18,6 +18,9 @@ typedef struct {
     bool full;
 } queue;
 
+
+void queue_test();
+
 bool queue_is_empty(queue *q);
 
 void queue_init(queue *q);

@@ -5,6 +5,21 @@
 #include "queues.h"
 #include <math.h>
 
+void queue_test() {
+    queue q;
+    int temp;
+    queue_init(&q);
+    for (int i = 0; i < 5; ++i) {
+        scanf("%d", &temp);
+        enqueu(&q, temp);
+    }
+    for (int i = 0; i < 2; ++i) {
+        dequeue(&q);
+    }
+    print_queue(&q);
+}
+
+
 bool queue_is_empty(queue *q) {
     if (!q->full && q->rear == q->front)
         return true;

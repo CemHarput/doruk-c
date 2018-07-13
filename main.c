@@ -11,19 +11,21 @@
 #include <math.h>
 #include "hackerrank/balanced_brackets.h"
 #include "data-structures/queues.h"
+#include "buble-sort.h"
 
 int main() {
-    queue q;
-    int temp;
-    queue_init(&q);
+    int arr[] = {10, 9, 8, 7, 6};
+    sort(arr, 5);
     for (int i = 0; i < 5; ++i) {
-        scanf("%d", &temp);
-        enqueu(&q, temp);
+        printf("%d ", arr[i]);
     }
-    for (int i = 0; i < 2; ++i) {
-        dequeue(&q);
+    printf("\n");
+
+    char *arr2[] = {"Mehmet", "Cem", "Ali", "Bora"};
+    ssort(arr2, 4);
+    for (int i = 0; i < 4; ++i) {
+        printf("%s\n", arr2[i]);
     }
-    print_queue(&q);
 
 
     return 0;
