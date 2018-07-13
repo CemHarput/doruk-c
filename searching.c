@@ -39,3 +39,21 @@ int binary_search_internal(int arr[], int start, int end, int searching) {
         return binary_search_internal(arr, middle + 1,end, searching);
     }
 }
+
+void searching_test() {
+    int arr[] = {10, 9, 8, 7, 6};
+    sort(arr, 5);
+    for (int i = 0; i < 5; ++i) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
+    char *arr2[] = {"Mehmet", "Cem", "Ali", "Bora"};
+    ssort(arr2, 4);
+    for (int i = 0; i < 4; ++i) {
+        printf("%s\n", arr2[i]);
+    }
+
+    int i = binary_search(arr, 5, 8);
+    printf("%d", i);
+}

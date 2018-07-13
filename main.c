@@ -13,23 +13,14 @@
 #include "data-structures/queues.h"
 #include "buble-sort.h"
 #include "searching.h"
+#include "binary-search-tree.h"
+
+void bst_test();
 
 int main() {
-    int arr[] = {10, 9, 8, 7, 6};
-    sort(arr, 5);
-    for (int i = 0; i < 5; ++i) {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
 
-    char *arr2[] = {"Mehmet", "Cem", "Ali", "Bora"};
-    ssort(arr2, 4);
-    for (int i = 0; i < 4; ++i) {
-        printf("%s\n", arr2[i]);
-    }
 
-    int i = binary_search(arr, 5, 8);
-    printf("%d", i);
+    bst_test();
 
     return 0;
 }
